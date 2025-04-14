@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER DELTA FORCE - We Work to Protect Bangladesh</title>
+    <meta name="author" content="CYBER 71">
+    <meta name="description" content="CYBER DELTA FORCE - We work to protect Bangladesh.">
+    <meta name="subject" content="CYBER DELTA FORCE - Official Website">
+    <meta name="keywords" content="CYBER DELTA FORCE, সাইবার ডেল্টা ফোর্স ,Bangladeshi Hacker, বাংলাদেশি হ্যাকার, হ্যাকার, Cybersecurity, Bangladesh, Protect, Community">
+    <meta name="copyright" content="CYBER 71">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=VT323&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base reset and responsive design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.85), rgba(255, 255, 255, 0.08), rgba(0, 255, 0, 0.07));
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Cursor lighting effect */
+        body::after {
+            content: '';
+            position: fixed;
+            top: var(--cursor-y);
+            left: var(--cursor-x);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 60%);
+            border-radius: 50%;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            transform: translate(-50%, -50%);
+            transition: top 0.1s, left 0.1s;
+        }
+
+        /* Matrix background effect */
+        .matrix {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .matrix span {
+            position: absolute;
+            color: black;
+            font-size: 16px;
+            animation: fall 3s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh);
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0.1;
+            }
+        }
+
+        /* Logo styling */
+        .logo-container {
+            margin-top: 20px;
+            transition: transform 0.5s ease-in-out;
+            z-index: 1;
+        }
+
+        .logo-container:hover {
+            transform: rotate(360deg);
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            background: transparent;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            background: linear-gradient(90deg, green, red);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            z-index: 1;
+        }
+
+        /* Slogan styling with floating effect */
+        .slogan {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #cfcfcf;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 800px;
+            z-index: 1;
+            text-align: center;
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Maintenance message */
+        .maintenance {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff3333;
+            margin-top: 20px;
+            z-index: 1;
+        }
+
+        /* Facebook embed container */
+        .facebook-container {
+            width: 100%;
+            max-width: 340px;
+            z-index: 1;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666666;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .slogan {
+                font-size: 0.9rem;
+            }
+
+            .facebook-container {
+                max-width: 90%;
+            }
+
+            iframe {
+                height: auto;
+            }
+
+            .logo-container img {
+                width: 120px;
+            }
+
+            .maintenance {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix background -->
+    <div class="matrix"></div>
+
+    <!-- Logo and Header -->
+    <header>
+        <div class="logo-container">
+            <img src="c:\Users\Omar Faruk !\Downloads\CDF.jpg" alt="CDF Logo">
+        </div>
+        <h1>CYBER DELTA FORCE, We Work to Protect Bangladesh</h1>
+    </header>
+
+    <!-- Slogan -->
+    <p class="slogan">
+        To test our skills, challenge us. but don't ask "Who we are." <br>
+        Just keep your eyes on what we do. <br>
+        We are CYBER DELTA FORCE. We are Bangladeshi cyber warriors. <br>
+        We fight with anyone, but never against everyone. <br>
+        We trust everyone, but never just anyone. <br>
+        Because we are the only one.
+    </p>
+
+    <!-- Maintenance Message -->
+    <p class="maintenance">
+        Admin :- Omar Faruk ! 
+    </p>
+
+    <!-- Facebook Embed -->
+    <div class="facebook-container">
+        <iframe 
+            src="https://www.facebook.com/profile.php?id=61571864574929" 
+            allow="encrypted-media" 
+            scrolling="no">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 CYBER DELTA FORCE. Established in 2011. All rights reserved.  
+        Proudly protecting Bangladesh.
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const matrix = document.querySelector('.matrix');
+        const createMatrix = () => {
+            for (let i = 0; i < 100; i++) {
+                const matrixChar = document.createElement('span');
+                matrixChar.textContent = String.fromCharCode(Math.floor(Math.random() * 128));
+                matrixChar.style.left = Math.random() * 100 + 'vw';
+                matrixChar.style.animationDuration = Math.random() * 3 + 2 + 's';
+                matrixChar.style.animationDelay = Math.random() * 2 + 's';
+                matrix.appendChild(matrixChar);
+            }
+        };
+        createMatrix();
+
+        // Cursor lighting effect
+        document.addEventListener('mousemove', (e) => {
+            document.body.style.setProperty('--cursor-x', `${e.clientX}px`);
+            document.body.style.setProperty('--cursor-y', `${e.clientY}px`);
+        });
+    </script>
+</body>
+</html>
